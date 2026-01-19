@@ -53,30 +53,59 @@ const NewsList = () => {
   return (
     <>
       {/* ================= HEADER ================= */}
-      <section className="relative w-full min-h-[70vh] overflow-hidden">
+       <section className="relative w-full min-h-[70vh] overflow-hidden">
         <img
           src={transport}
-          alt="News Banner"
+          alt="Events Banner"
           className="absolute inset-0 w-full h-full object-cover blur-sm scale-110"
         />
+
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/40 to-black/10"></div>
 
-        <div className="relative mx-auto max-w-[1400px] px-6 xl:px-12 pt-24 pb-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div
+          className="
+            relative mx-auto w-full
+            max-w-[1400px]
+            px-6 xl:px-12
+            pt-24 pb-10
+            grid grid-cols-1 lg:grid-cols-2
+            gap-10
+            items-center
+          "
+        >
           <Reveal>
             <div className="text-white text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold">
-                Blogs & <br />
-                <span className="text-[#EF4444]">News</span>
+                News & <br />
+                <span className="text-[#EF4444]">Blogs</span>
               </h1>
-              <p className="mt-5 text-gray-200 max-w-xl">
-                Latest updates, achievements and announcements from our school.
+
+              <p className="mt-5 text-gray-200 max-w-xl mx-auto lg:mx-0 text-lg">
+                A glimpse into the vibrant events and activities that enrich
+                student life and promote holistic development.
               </p>
-              <span className="block w-24 h-1 bg-[#EF4444] mt-6 rounded-full"></span>
+
+              <span className="block w-24 h-1 bg-[#EF4444] mt-6 mx-auto lg:mx-0 rounded-full"></span>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="flex justify-center lg:justify-end">
+              <img
+                src={transport}
+                alt="Events"
+                className="
+                  w-full max-w-sm lg:max-w-md xl:max-w-lg
+                  h-[220px] sm:h-[280px] lg:h-[340px]
+                  object-cover rounded-2xl shadow-2xl
+                "
+              />
             </div>
           </Reveal>
         </div>
       </section>
+
 
       {/* ================= NEWS CARDS ================= */}
       <section className="mb-16 px-4 sm:px-6 lg:px-20 mt-16">

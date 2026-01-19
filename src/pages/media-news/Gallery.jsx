@@ -113,9 +113,7 @@ const Gallery = () => {
                     loading="lazy"
                     className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                   />
-                  {/* <p className="text-center text-gray-700 mt-2">
-                    {item.name}
-                  </p> */}
+                
                 </div>
               </Reveal>
             ))}

@@ -7,8 +7,8 @@ import Reveal from "../../components/Reveal";
 const links = [
   {
     icon: <FaSchool />,
-    label: "School Information",
-    path: "/about",
+    label: "School Notifications",
+    path: "/notification",
   },
   {
     icon: <FaBullhorn />,

@@ -24,14 +24,14 @@ const OurMission = () => {
           <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl">
             <h2
               className="relative text-center text-4xl font-extrabold
-              bg-gradient-to-r from-[#008300] via-green-500 to-[#EF4444]
+              bg-gradient-to-r from-black- via-black to-[#EF4444]
               text-transparent bg-clip-text mb-12 tracking-wide"
             >
               Our Mission
               <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2">
-                <span className="w-12 h-[3px] bg-[#008300] rounded-full"></span>
+                <span className="w-12 h-[3px] bg-black rounded-full"></span>
                 <span className="w-3 h-3 bg-[#EF4444] rounded-full"></span>
-                <span className="w-12 h-[3px] bg-[#008300] rounded-full"></span>
+                <span className="w-12 h-[3px] bg-black rounded-full"></span>
               </div>
             </h2>
 
