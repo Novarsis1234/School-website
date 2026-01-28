@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   return (
     <section className="relative min-h-screen w-full overflow-hidden font-serif">
 
-      {/* Background Video */}
+      {/* ===== BACKGROUND IMAGE (Fallback) ===== */}
+      {!videoLoaded && (
+        <img
+          src="/Images/about1.avif"   
+          alt="Hero Background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      )}
+
+      {/* ===== BACKGROUND VIDEO ===== */}
       <video
-        className="absolute inset-0 w-full h-full object-cover"
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+          videoLoaded ? "opacity-100" : "opacity-0"
+        }`}
         src="/Images/homesection.mp4"
         autoPlay
         loop
         muted
         playsInline
+        onLoadedData={() => setVideoLoaded(true)}
       />
 
-      {/* Dark Overlay */}
+      {/* ===== DARK OVERLAY ===== */}
       <div className="absolute inset-0 bg-black/60"></div>
 
       {/* ===== HERO CONTENT ===== */}
