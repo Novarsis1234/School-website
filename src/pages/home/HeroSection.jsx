@@ -39,7 +39,7 @@ const HeroSection = () => {
         </p>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-          Welcome to <br /> Education
+          Welcome to <br /> Gurukul Internation School
         </h1>
 
         <p className="max-w-xl text-sm sm:text-base text-gray-200 leading-relaxed mb-8">
